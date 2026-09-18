@@ -1,0 +1,16 @@
+h1{ color: brown;}
+h2{ color: burlywood}
+h3{ color: brown;}
+body { background-color: lavenderblush;}
+table {
+	border-color:brown;
+    border-width: 2px;
+    border-style: solid;
+    background-color: pink;
+}
+th {
+    color: brown;
+}
+image {
+    border-color: brown;
+}
