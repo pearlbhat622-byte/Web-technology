@@ -1,0 +1,668 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f7f7;
+    color: #333;
+}
+
+
+
+/* =========================================
+   HIDE RADIO BUTTONS
+========================================= */
+
+input[type="radio"] {
+    display: none;
+}
+
+
+
+/* =========================================
+   TOP HEADER
+========================================= */
+
+.top-header {
+    height: 105px;
+
+    background: #25352D;
+
+    display: flex;
+    align-items: center;
+
+    color: white;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 1000;
+}
+
+
+
+/* Hamburger */
+
+.menu-icon {
+    width: 80px;
+
+    text-align: center;
+
+    font-size: 30px;
+
+    color: white;
+}
+
+
+
+/* Logo box */
+
+.college-logo {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.college-logo img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+}
+
+
+
+/* Portal title */
+
+.portal-title {
+    margin-left: 18px;
+}
+
+
+.portal-title h1 {
+    font-size: 24px;
+
+    margin-bottom: 4px;
+}
+
+
+.portal-title p {
+    font-size: 18px;
+
+    font-weight: bold;
+
+    color: white;
+}
+
+
+
+/* Header right */
+
+.header-right {
+    margin-left: auto;
+
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    padding-right: 30px;
+
+    gap: 18px;
+}
+
+
+.notification {
+    font-size: 25px;
+
+    color: #f2d2bd;
+}
+
+
+.profile-circle {
+    height: 65px;
+    width: 68px;
+
+    border-radius: 50%;
+
+    background: white;
+}
+.profile-pic {
+    font-size: 35px;
+    margin-left: 10px;
+    margin-top: 10px;
+
+    color: white;
+}
+
+
+.student-info {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+
+.student-info strong {
+    font-size: 18px;
+}
+
+
+.student-info span {
+    font-size: 16px;
+}
+
+
+.down-arrow {
+    font-size: 20px;
+}
+
+
+
+/* =========================================
+   SIDEBAR
+========================================= */
+
+.sidebar {
+    position: fixed;
+
+    top: 105px;
+    left: 0;
+    bottom: 0;
+
+    width: 250px;
+
+    background: #ffffff;
+
+    padding-top: 25px;
+
+    z-index: 900;
+
+    box-shadow: 2px 0 6px rgba(0,0,0,0.04);
+}
+
+
+
+/* Sidebar links */
+
+.sidebar-item {
+    height: 66px;
+
+    margin: 5px 12px;
+
+    padding: 0 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    text-decoration: none;
+
+    color: #3f4650;
+
+    font-size: 17px;
+
+    font-weight: 500;
+
+    border-radius: 3px;
+
+    transition: 0.2s;
+}
+
+
+.sidebar-item:hover {
+    background: #6FAF9F;
+}
+
+
+.sidebar-item.active {
+    background: #6FAF9F;
+
+    color: #25352D;
+
+    font-weight: bold;
+}
+
+
+.side-icon {
+    width: 25px;
+
+    font-size: 23px;
+
+    text-align: center;
+}
+
+
+.logout {
+    margin-top: 12px;
+}
+
+
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+.main-content {
+    margin-left: 250px;
+
+    padding: 145px 40px 50px 40px;
+
+    min-height: 100vh;
+}
+
+
+
+/* =========================================
+   COURSE HEADER
+========================================= */
+
+.course-header {
+    position: relative;
+
+    min-height: 70px;
+
+    margin-bottom: 10px;
+}
+
+
+.course-header h2 {
+    font-size: 26px;
+
+    font-weight: 600;
+
+    padding-top: 8px;
+}
+
+
+
+/* Only correct heading visible */
+
+.heading-sem2,
+.heading-sem3 {
+    display: none;
+}
+
+
+#semester2:checked ~ .main-content .heading-sem1,
+#semester3:checked ~ .main-content .heading-sem1 {
+    display: none;
+}
+
+
+#semester2:checked ~ .main-content .heading-sem2 {
+    display: block;
+}
+
+
+#semester3:checked ~ .main-content .heading-sem3 {
+    display: block;
+}
+
+
+
+/* =========================================
+   SEMESTER DROPDOWN
+========================================= */
+
+.semester-dropdown {
+    position: absolute;
+
+    right: 0;
+    top: 0;
+
+    width: 175px;
+
+    z-index: 500;
+}
+
+
+.selected-semester {
+    height: 48px;
+
+    background: white;
+
+    border: 1px solid #e0e0e0;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 14px;
+
+    position: relative;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+
+.dropdown-arrow {
+    position: absolute;
+
+    right: 13px;
+
+    font-size: 17px;
+}
+
+
+
+/* Selected text */
+
+.selected-sem1,
+.selected-sem2,
+.selected-sem3 {
+    display: none;
+}
+
+
+#semester1:checked ~ .main-content .selected-sem1 {
+    display: block;
+}
+
+
+#semester2:checked ~ .main-content .selected-sem2 {
+    display: block;
+}
+
+
+#semester3:checked ~ .main-content .selected-sem3 {
+    display: block;
+}
+
+
+
+/* =========================================
+   DROPDOWN OPTIONS
+========================================= */
+
+.semester-options {
+    display: none;
+
+    background: white;
+
+    border: 1px solid #ddd;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+
+.semester-dropdown:hover .semester-options {
+    display: block;
+}
+
+
+.semester-options label {
+    display: block;
+
+    padding: 12px 14px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    color: #444;
+}
+
+
+.semester-options label:hover {
+    background: #eeeeee;
+}
+
+
+
+/* =========================================
+   COURSE TABLE
+========================================= */
+
+.course-table {
+    width: 100%;
+
+    margin-top: 5px;
+
+    overflow-x: auto;
+}
+
+
+.course-table table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background: white;
+
+    table-layout: fixed;
+}
+
+
+
+/* =========================================
+   TABLE HEADER
+========================================= */
+
+.course-table thead {
+    background: #25352D;
+
+    color: white;
+}
+
+
+.course-table th {
+    height: 64px;
+
+    padding: 10px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    border-right: 1px solid rgba(255,255,255,0.3);
+}
+
+
+.course-table th:nth-child(1) {
+    width: 8%;
+}
+
+
+.course-table th:nth-child(2) {
+    width: 18%;
+}
+
+
+.course-table th:nth-child(3) {
+    width: 30%;
+}
+
+
+.course-table th:nth-child(4) {
+    width: 12%;
+}
+
+
+.course-table th:nth-child(5),
+.course-table th:nth-child(6),
+.course-table th:nth-child(7) {
+    width: 11%;
+}
+
+
+
+/* =========================================
+   TABLE BODY
+========================================= */
+
+.course-table td {
+    height: 64px;
+
+    padding: 12px;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    color: #555;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+.course-table td:nth-child(3) {
+    text-align: left;
+}
+
+
+.course-table tbody tr:hover {
+    background: #fafafa;
+}
+
+
+
+/* =========================================
+   SEMESTER VISIBILITY
+========================================= */
+
+/* Default */
+
+.table-sem2,
+.table-sem3 {
+    display: none;
+}
+
+
+
+/* Semester 1 */
+
+#semester1:checked ~ .main-content .table-sem1 {
+    display: block;
+}
+
+
+#semester1:checked ~ .main-content .table-sem2,
+#semester1:checked ~ .main-content .table-sem3 {
+    display: none;
+}
+
+
+
+/* Semester 2 */
+
+#semester2:checked ~ .main-content .table-sem1,
+#semester2:checked ~ .main-content .table-sem3 {
+    display: none;
+}
+
+
+#semester2:checked ~ .main-content .table-sem2 {
+    display: block;
+}
+
+
+
+/* Semester 3 */
+
+#semester3:checked ~ .main-content .table-sem1,
+#semester3:checked ~ .main-content .table-sem2 {
+    display: none;
+}
+
+
+#semester3:checked ~ .main-content .table-sem3 {
+    display: block;
+}
+
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .sidebar {
+        width: 210px;
+    }
+
+    .main-content {
+        margin-left: 210px;
+
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .student-info {
+        display: none;
+    }
+
+    .course-table {
+        overflow-x: auto;
+    }
+
+    .course-table table {
+        min-width: 850px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .sidebar {
+        width: 70px;
+    }
+
+    .sidebar-item {
+        justify-content: center;
+
+        padding: 0;
+
+        gap: 0;
+    }
+
+    .sidebar-item span:last-child {
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 70px;
+
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .portal-title {
+        display: none;
+    }
+
+    .college-logo {
+        display: none;
+    }
+
+    .header-right {
+        padding-right: 10px;
+    }
+
+    .course-header h2 {
+        font-size: 21px;
+    }
+
+}

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Courses | GCET Jammu</title>
+
+    <link rel="stylesheet" href="courses.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         CSS-ONLY SEMESTER CONTROLS
+    ========================================== -->
+
+    <input type="radio" name="semester" id="semester1" checked>
+    <input type="radio" name="semester" id="semester2">
+    <input type="radio" name="semester" id="semester3">
+
+
+    <!-- =========================================
+         TOP HEADER
+    ========================================== -->
+
+    <header class="top-header">
+
+        <div class="menu-icon">
+            ☰
+        </div>
+
+        <div class="college-logo">
+    <img src="images/logo.png" alt="GCET Logo">
+</div>
+
+        <div class="portal-title">
+            <h1>GCET Jammu</h1>
+            <p>Student Portal</p>
+        </div>
+
+
+        <div class="header-right">
+
+            <div class="notification">
+                ♟
+            </div>
+
+            <div class="profile-circle">
+                <div class="profile-pic">
+                    👩🏻
+                </div>
+            </div>
+
+            <div class="student-info">
+                <strong>Pearl Bhat</strong>
+                <span>2512013</span>
+            </div>
+
+            <div class="down-arrow">
+               ⌄
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================================
+         SIDEBAR
+    ========================================== -->
+
+    <aside class="sidebar">
+
+        <a href="dashboard.html" class="sidebar-item">
+            <span class="side-icon">⌂</span>
+            <span>Dashboard</span>
+        </a>
+
+
+        <a href="profile.html" class="sidebar-item">
+            <span class="side-icon">♙</span>
+            <span>My Profile</span>
+        </a>
+
+
+        <a href="#" class="sidebar-item active">
+            <span class="side-icon">▣</span>
+            <span>My Courses</span>
+        </a>
+
+
+        <a href="results.html" class="sidebar-item">
+            <span class="side-icon">▣</span>
+            <span>My Results</span>
+        </a>
+
+
+        <a href="index.html" class="sidebar-item logout">
+            <span class="side-icon">⇥</span>
+            <span>Logout</span>
+        </a>
+
+    </aside>
+
+
+
+    <!-- =========================================
+         MAIN CONTENT
+    ========================================== -->
+
+    <main class="main-content">
+
+
+        <div class="course-header">
+
+            <!-- Heading -->
+
+            <h2 class="heading-sem1">
+                My Courses (Semester 1)
+            </h2>
+
+            <h2 class="heading-sem2">
+                My Courses (Semester 2)
+            </h2>
+
+            <h2 class="heading-sem3">
+                My Courses (Semester 3)
+            </h2>
+
+
+            <!-- =================================
+                 SEMESTER DROPDOWN
+            ================================== -->
+
+            <div class="semester-dropdown">
+
+                <div class="selected-semester">
+
+                    <span class="selected-sem1">
+                        Semester 1
+                    </span>
+
+                    <span class="selected-sem2">
+                        Semester 2
+                    </span>
+
+                    <span class="selected-sem3">
+                        Semester 3
+                    </span>
+
+                    <span class="dropdown-arrow">
+                        ⌄
+                    </span>
+
+                </div>
+
+
+                <div class="semester-options">
+
+                    <label for="semester3">
+                        Semester 3
+                    </label>
+
+                    <label for="semester2">
+                        Semester 2
+                    </label>
+
+                    <label for="semester1">
+                        Semester 1
+                    </label>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =========================================
+             SEMESTER 1 TABLE
+        ========================================== -->
+
+        <section class="course-table table-sem1">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>S.No.</th>
+                        <th>Course Code</th>
+                        <th>Course Name</th>
+                        <th>Credits</th>
+                        <th>Internal<br>Marks</th>
+                        <th>External<br>Marks</th>
+                        <th>Total<br>Marks</th>
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>BCS101</td>
+                        <td>Programming in C</td>
+                        <td>4</td>
+                        <td>18</td>
+                        <td>62</td>
+                        <td>80</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>2</td>
+                        <td>BMAT101</td>
+                        <td>Engineering Mathematics</td>
+                        <td>4</td>
+                        <td>16</td>
+                        <td>58</td>
+                        <td>74</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>3</td>
+                        <td>BPHY101</td>
+                        <td>Engineering Physics</td>
+                        <td>4</td>
+                        <td>17</td>
+                        <td>65</td>
+                        <td>82</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+
+        <!-- =========================================
+             SEMESTER 2 TABLE
+        ========================================== -->
+
+        <section class="course-table table-sem2">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>S.No.</th>
+                        <th>Course Code</th>
+                        <th>Course Name</th>
+                        <th>Credits</th>
+                        <th>Internal<br>Marks</th>
+                        <th>External<br>Marks</th>
+                        <th>Total<br>Marks</th>
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>BCS201</td>
+                        <td>Data Structures</td>
+                        <td>4</td>
+                        <td>18</td>
+                        <td>62</td>
+                        <td>80</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>2</td>
+                        <td>BEET201</td>
+                        <td>Fundamentals of Electrical Engineering</td>
+                        <td>4</td>
+                        <td>16</td>
+                        <td>58</td>
+                        <td>74</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>3</td>
+                        <td>BCHM201</td>
+                        <td>Engineering Chemistry</td>
+                        <td>4</td>
+                        <td>17</td>
+                        <td>65</td>
+                        <td>82</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+
+        <!-- =========================================
+             SEMESTER 3 TABLE
+        ========================================== -->
+
+        <section class="course-table table-sem3">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>S.No.</th>
+                        <th>Course Code</th>
+                        <th>Course Name</th>
+                        <th>Credits</th>
+                        <th>Internal<br>Marks</th>
+                        <th>External<br>Marks</th>
+                        <th>Total<br>Marks</th>
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>BCS301</td>
+                        <td>Digital System and Design</td>
+                        <td>4</td>
+                        <td>18</td>
+                        <td>62</td>
+                        <td>80</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>2</td>
+                        <td>BCS302</td>
+                        <td>Object Oriented Programming using C++</td>
+                        <td>4</td>
+                        <td>16</td>
+                        <td>58</td>
+                        <td>74</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>3</td>
+                        <td>BCS303</td>
+                        <td>Cyber Ethics</td>
+                        <td>4</td>
+                        <td>17</td>
+                        <td>65</td>
+                        <td>82</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>4</td>
+                        <td>BCS304</td>
+                        <td>Entrepreneurship and Business</td>
+                        <td>4</td>
+                        <td>19</td>
+                        <td>60</td>
+                        <td>79</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

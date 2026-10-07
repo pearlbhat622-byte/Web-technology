@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government College of engineering and technology-admission</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <nav class="navbar">
+
+        <div class="logo">
+            <img src="images/logo.png" alt="College Logo">
+            <h2>Government College of Engineering and Technology, Jammu</h2>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="faculty.html">Faculty</a>
+            <a href="students.html">Students</a>
+            <a href="gallery.html">Photo Gallery</a>
+            <a href="admission.html">Admission</a>
+            <a href="login.html" class="login-btn">
+                Student Login
+            </a>
+        </div>
+
+    </nav>
+</header>
+
+
+
+<section class="section">
+
+    <h1>Student Admission Form</h1>
+
+    <form action="submit.html" method="get">
+
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Date of Birth</label>
+        <input type="date" required>
+
+        <label>Mobile Number</label>
+        <input type="tel" placeholder="Enter mobile number" required>
+
+        <label>Course</label>
+
+        <select required>
+            <option value="">Select Course</option>
+            <option>B.Tech Computer Science</option>
+            <option>B.Tech Electronics</option>
+            <option>B.Tech Mechanical</option>
+            <option>B.Tech Civil</option>
+        </select>
+
+        <label>Address</label>
+
+        <textarea rows="5" placeholder="Enter your address"></textarea>
+
+        <div class="form-buttons">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+
+    </form>
+
+</section>
